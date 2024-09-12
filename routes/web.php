@@ -23,7 +23,7 @@ use App\Http\Controllers\DiscussController;
 // });
 
 Route::get('/', [HomeController::class, 'welcome'])->name('home');
-
+//
 Route::get('/discussions', [DiscussController::class, 'index'])->name('index');
 Route::get('/discussions/{id}/show', [DiscussController::class, 'show'])->name('show');
 Route::post('/discussions/{id}', [DiscussController::class, 'store'])->name('store');
